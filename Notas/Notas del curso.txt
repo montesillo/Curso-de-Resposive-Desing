@@ -1,0 +1,157 @@
+Un servidor es básicamente una computadora que esta encendida todo el tiempo
+Los clientes se comunican con esta computadora por medio de una red
+Se comunican con lo que llamamos dominios, que son los .com, .co
+Se suele llamar hosting
+Existen múltiples sitios de hosting
+
+PROFESIONES DENTRO DEL DESARROLLO WEB
+
+Frontend: Encargados de cuidar toda la apariencia experiencia del usuario.
+misión Frontend tiene la mision de pasar el diseño a código. Enlazarse de cualquier evento que tiene el usuario.
+Arquitecto Frontend: Se encarga de las interfaces.
+Desarrollador JavaScript. 
+
+Backend: Resguarda los datos y la seguridad de las aplicaciones.
+Su misión es crear y mantener toda la parte del sitio web que sucede en los servidores. Pueden especializarse aún más en: SysAdmis, DevOps, Desarrollador JavaScript (backend), entre otros.
+
+HTML = Hypertext Markup Language
+
+CSS = Lenguaje para definir la creación de documentos HTML.
+
+JavaScript = Es el lenguaje de programación del navegador.
+
+¿Cómo hacerte un buen Frontend?
+Es un conjunto de estudiar y practicar un montón :)
+
+DOM Document object model
+Modelo de documento que se carga en el navegador web y que representa el documento como un árbol de nodos
+
+Las etiquetas HTML es usada para cerrar contenido
+
+title = Sirve para poner titulo en el tap
+meta= agrega infromacion sobre el codificado
+
+header = cabecera
+
+Ejemplo
+<nombre> contenido </nombre>
+
+p = párrafo
+
+Algunas etiquetas se cierran a si mismas
+
+<img src=""/>
+
+Para consultar etiquetas visitar el sitio html5doctor.com
+
+ para no poner un peso semántico se usa div
+
+para textos con lo mismo es span (es un div a nivel de texto) 
+
+head = aquí se colocan los metadatos
+
+section = es para secciones
+
+footer = pie de pagina
+
+nav = sirve para el menú de navegación
+
+ol = listas ordenadas, crea números para ordenarlas
+
+ul = listas desordenadas, les coloca un punto
+
+li = lista de items
+
+a = ancla se puede colocar una url	
+
+br = salto de línea
+
+strong = sirve para destacar una parte en especial
+
+article = sirve para colocar proyectos
+
+small = es una sub etiqueta, formatea el texto que esta dentro
+
+Para colocar un favicon (Logo en la pestaña) se utiliza <link rel="icon" type="image/png" href="ruta de la imagen">
+
+target="_blank" Sirve para que se abra una nueva pestaña al dar click en un enlace, de esta forma no se sale de nuestra pagina
+
+Estilos en línea: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo style.
+
+Estilos con el tag Style: regularmente este tag se incluye dentro de la etiqueta head del html.
+
+Estilos enlazados desde un archivo css externo: utilizando la etiqueta link que nos permite enlazar recursos externos.
+
+CSS
+reglas: están conformadas de 
+selectores: Como identificamos algún elemento HTML
+declaraciones: Todo lo que se hace con ese selector
+propiedades: Cosas particulares que se pueden hacer con esos elementos
+valores: Es lo que se espera recibir las propiedades de forma correcta
+
+Colores y pixeles
+Ciertos colores se pueden representar con palabras claves como “red, blue”
+También usando hexadecimales o rgb(), rgba()
+Hexadecimal #FFFFFFFF(Blanco) #00000000(Negro)
+Las primeras dos letras representan el rojo, las siguientes dos verde, y las dos ultimas son azul.
+Las unidades de medida por excelencia dentro del mundo digital son los pixeles.
+Un pixel es la mejor unidad homogénea en color que forma parte de una imagen digital.
+
+Una fuente es el diseño de la tipografía que utiliza nuestro web site
+Las propiedades de css se heredan.
+Con font-family: //Se puede cambiar el tipo de fuente.
+Si una fuente tiene más de dos palabras se tienen que poner entre comillas.
+Aquí se pueden encontrar diferentes tipos de fuentes.
+https://fonts.google.com/ 
+
+line-height: // sirve para poner un alto de línea.
+font-size: 40px; // Sirve para el tamaño del texto.
+font-weight: 400; // Ancho del tipo de fuente.
+letter-spacing: -.2px; // Coloca el espacio de las letras.
+text-transform: // Puedes cambiar mayúsculas y minúsculas.
+
+Con color piker se puede obtener los colores de una imagen.
+Con la etiqueta <a> se tiene que ser más especifico para cambiar el color ya que estas bien con un color ya determinado.
+
+background-size: 500px 300px; // Con esta propiedad puedes colocar tamaño a la imagen que esta de fondo en css, el primer valor es el ancho y el segundo valor es el alto.
+background-repeat: // Controlas cuantas veces se puede repetir una imagen.
+background-position // Controlas la posición del fondo.
+
+border: 1px solid gray; // Propiedad de border el primer elemento es el tamaño, el segundo el tipo de border linea, punteada u otros, el tercero es el color que tendrá ese border.
+border-radius: 10px; // Con este elemento se pueden redondear las esquinas de un border.
+
+margin: top right bottom left; De esta forma actúa la propiedad margin.
+
+Cuando se utiliza margin y padding?
+Margin se utiliza para separar desde fuera del elemento, padding hace la separación desde dentro del elemento
+
+El modelo de caja sirve para obtener el tamaño total que va a ocupar un elemento.
+La propiedad para que se quede el fijo del tamaño del elemento es: box-sizing: border-box, con este elemento provoca que se respete el tamaño exacto width y height.
+Cada elemento puede tener diferente display, algunos elementos heredan el display de su elemento padre.
+Con el elemeto display: inline-block; Respeta el tamaño que se le asigno al contenedor.
+Flexbox se refiere al tipo de display en css que permite un manejo flexible de la alineación, dimensionamiento y distribución de elementos html.
+Esta propiedad se aplica a un elemento padre, pero va a afectar principalmente a sus elementos hijos directos. Por defecto, los elementos internos quedan alineados unos seguidos de los otros. El comportamiento del modelo de caja de estos elementos hijos también se ha modificado, ya que pierden el efecto de su propiedad margin.
+Los elementos hijos de un padre con propiedad display: flex tienen a su disposición algunas nuevas propiedades que aportan mayor flexibilidad a su comportamiento. Una de estas propiedades es flex-shrink que, junto a la propiedad flex-wrap del padre, permite adaptar y distribuir los elementos de manera dinámica en el espacio horizontal disponible hasta ocupar todo el espacio, y luego pasar a ocupar dinámicamente las siguiente filas hacia abajo.
+Flex-shrink: 0; permite respetar los tamaños asignados a pesar de que exista display: flex en el elemento padre.
+Flex-wrap: wrap; Con esta propiedad permite que los elementos bajen si el espacio no es suficiente para los elementos, esta propiedad se utiliza en el elemento padre.
+
+Con justify-content: // Se puede alinear elemento.
+Similar a como sucede con justify-content, es posible alinear y distribuir los elementos internos en el 
+espacio vertical disponible usando la propiedad align-items, que puede tomar también los valores de: flex-start,
+ flex-end y center.
+
+Algo que es muy importante y se debe tener en cuenta a la hora de usar align-items y justify-content 
+es que dependiendo de la propiedad flex-direction que se haya definido, el efecto de ambos se invierte, 
+no en cuanto a sus elementos internos, sino en cuanto a si se debe usar uno u otro de manera vertical u horizontal.
+
+IMPORTANTE: Cuando la propiedad flex-direction se ha definido como column, la propiedad justify-content 
+ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y align-items ya no aplicaría 
+sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
+
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, 
+debemos usar el valor center en ambas propiedades.
+Usar align-items y justify-content puedes centrar completamente un elemento.
+Con aling-self: // Se pueden cambiar la alineación del hijo.
+
+Cuando tienes texto y otro tipo de elemento, se usa vertical-aling: // para poder centrarla con el elemento.
+Con objet-fit: cover; Se mantiene una imagen en proporción
